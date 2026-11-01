@@ -1036,6 +1036,83 @@
       transform: translateY(-1px);
     }
 
+    /* Textbook Chapter Action */
+    .book-action-wrap {
+      margin-top: 8px;
+    }
+
+    .btn-book {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 7px 10px;
+      border-radius: 8px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-main);
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 11.5px;
+      font-weight: 600;
+      transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+      min-width: 0;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    .btn-book:hover {
+      border-color: #3b82f6;
+      color: #3b82f6;
+      background: rgba(59, 130, 246, 0.08);
+      transform: translateY(-1px);
+    }
+
+    .btn-book-left {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .btn-book-icon {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+      color: #3b82f6;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-book-title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 600;
+    }
+
+    .btn-book-meta {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 10.5px;
+      color: var(--text-muted);
+      background: var(--bg-surface);
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid var(--border-subtle);
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    .btn-book:hover .btn-book-meta {
+      border-color: rgba(59, 130, 246, 0.3);
+      color: #3b82f6;
+    }
+
+
     /* Collapsible Sub-Solutions Drawer */
     .sub-drawer {
       margin-top: 2px;
@@ -1955,6 +2032,10 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
               1,835 PDF Pages
             </span>
+            <span class="gate-perk-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              10 Original Book Chapters
+            </span>
           </div>
         </div>
       </div>
@@ -2002,6 +2083,17 @@
                 <span>Complete PDF</span>
               </a>
             </div>
+            <div class="book-action-wrap">
+              <a href="book/Chapter 5 - A Survey of Probability Concepts.pdf" target="_blank" class="action-btn btn-book" onclick="handleProtectedPdfClick(event, 'Chapter 5 Textbook')">
+                <span class="btn-book-left">
+                  <span class="btn-book-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                  </span>
+                  <span class="btn-book-title">Textbook Chapter</span>
+                </span>
+                <span class="btn-book-meta">42 Pages &bull; 2.56 MB</span>
+              </a>
+            </div>
 
             
           </div>
@@ -2045,6 +2137,17 @@
                 <span>Complete PDF</span>
               </a>
             </div>
+            <div class="book-action-wrap">
+              <a href="book/Chapter 6 - Discrete Probability Distributions.pdf" target="_blank" class="action-btn btn-book" onclick="handleProtectedPdfClick(event, 'Chapter 6 Textbook')">
+                <span class="btn-book-left">
+                  <span class="btn-book-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                  </span>
+                  <span class="btn-book-title">Textbook Chapter</span>
+                </span>
+                <span class="btn-book-meta">36 Pages &bull; 2.35 MB</span>
+              </a>
+            </div>
 
             
           </div>
@@ -2086,6 +2189,17 @@
               <a href="pdf/Chapter 07 - Complete Solutions (with Reviews & Practice Tests).pdf" class="action-btn btn-pdf">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
                 <span>Complete PDF</span>
+              </a>
+            </div>
+            <div class="book-action-wrap">
+              <a href="book/Chapter 7 - Continuous Probability Distributions.pdf" target="_blank" class="action-btn btn-book" onclick="handleProtectedPdfClick(event, 'Chapter 7 Textbook')">
+                <span class="btn-book-left">
+                  <span class="btn-book-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                  </span>
+                  <span class="btn-book-title">Textbook Chapter</span>
+                </span>
+                <span class="btn-book-meta">43 Pages &bull; 1.79 MB</span>
               </a>
             </div>
 
@@ -2215,6 +2329,17 @@
                 <span>Complete PDF</span>
               </a>
             </div>
+            <div class="book-action-wrap">
+              <a href="book/Chapter 8 - Sampling Methods and the Central Limit Theorem.pdf" target="_blank" class="action-btn btn-book" onclick="handleProtectedPdfClick(event, 'Chapter 8 Textbook')">
+                <span class="btn-book-left">
+                  <span class="btn-book-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                  </span>
+                  <span class="btn-book-title">Textbook Chapter</span>
+                </span>
+                <span class="btn-book-meta">32 Pages &bull; 1.35 MB</span>
+              </a>
+            </div>
 
             
           </div>
@@ -2256,6 +2381,17 @@
               <a href="pdf/Chapter 09 - Complete Solutions (with Reviews & Practice Tests).pdf" class="action-btn btn-pdf">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
                 <span>Complete PDF</span>
+              </a>
+            </div>
+            <div class="book-action-wrap">
+              <a href="book/Chapter 9 - Estimation and Confidence Intervals.pdf" target="_blank" class="action-btn btn-book" onclick="handleProtectedPdfClick(event, 'Chapter 9 Textbook')">
+                <span class="btn-book-left">
+                  <span class="btn-book-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                  </span>
+                  <span class="btn-book-title">Textbook Chapter</span>
+                </span>
+                <span class="btn-book-meta">36 Pages &bull; 3.30 MB</span>
               </a>
             </div>
 
@@ -2385,6 +2521,17 @@
                 <span>Complete PDF</span>
               </a>
             </div>
+            <div class="book-action-wrap">
+              <a href="book/Chapter 10 - One-Sample Tests of Hypothesis.pdf" target="_blank" class="action-btn btn-book" onclick="handleProtectedPdfClick(event, 'Chapter 10 Textbook')">
+                <span class="btn-book-left">
+                  <span class="btn-book-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                  </span>
+                  <span class="btn-book-title">Textbook Chapter</span>
+                </span>
+                <span class="btn-book-meta">38 Pages &bull; 2.53 MB</span>
+              </a>
+            </div>
 
             
           </div>
@@ -2428,6 +2575,17 @@
                 <span>Complete PDF</span>
               </a>
             </div>
+            <div class="book-action-wrap">
+              <a href="book/Chapter 11 - Two-Sample Tests of Hypothesis.pdf" target="_blank" class="action-btn btn-book" onclick="handleProtectedPdfClick(event, 'Chapter 11 Textbook')">
+                <span class="btn-book-left">
+                  <span class="btn-book-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                  </span>
+                  <span class="btn-book-title">Textbook Chapter</span>
+                </span>
+                <span class="btn-book-meta">39 Pages &bull; 3.18 MB</span>
+              </a>
+            </div>
 
             
           </div>
@@ -2469,6 +2627,17 @@
               <a href="pdf/Chapter 12 - Complete Solutions (with Reviews & Practice Tests).pdf" class="action-btn btn-pdf">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
                 <span>Complete PDF</span>
+              </a>
+            </div>
+            <div class="book-action-wrap">
+              <a href="book/Chapter 12 - Analysis of Variance.pdf" target="_blank" class="action-btn btn-book" onclick="handleProtectedPdfClick(event, 'Chapter 12 Textbook')">
+                <span class="btn-book-left">
+                  <span class="btn-book-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                  </span>
+                  <span class="btn-book-title">Textbook Chapter</span>
+                </span>
+                <span class="btn-book-meta">51 Pages &bull; 3.77 MB</span>
               </a>
             </div>
 
@@ -2598,6 +2767,17 @@
                 <span>Complete PDF</span>
               </a>
             </div>
+            <div class="book-action-wrap">
+              <a href="book/Chapter 13 - Correlation and Linear Regression.pdf" target="_blank" class="action-btn btn-book" onclick="handleProtectedPdfClick(event, 'Chapter 13 Textbook')">
+                <span class="btn-book-left">
+                  <span class="btn-book-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                  </span>
+                  <span class="btn-book-title">Textbook Chapter</span>
+                </span>
+                <span class="btn-book-meta">51 Pages &bull; 3.60 MB</span>
+              </a>
+            </div>
 
             
           </div>
@@ -2639,6 +2819,17 @@
               <a href="pdf/Chapter 14 - Complete Solutions (with Reviews & Practice Tests).pdf" class="action-btn btn-pdf">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
                 <span>Complete PDF</span>
+              </a>
+            </div>
+            <div class="book-action-wrap">
+              <a href="book/Chapter 14 - Multiple Regression Analysis.pdf" target="_blank" class="action-btn btn-book" onclick="handleProtectedPdfClick(event, 'Chapter 14 Textbook')">
+                <span class="btn-book-left">
+                  <span class="btn-book-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                  </span>
+                  <span class="btn-book-title">Textbook Chapter</span>
+                </span>
+                <span class="btn-book-meta">61 Pages &bull; 4.14 MB</span>
               </a>
             </div>
 
